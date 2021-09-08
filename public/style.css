@@ -1,0 +1,121 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.root {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 15vh 50vh 10vh 90vh 10vh 50vh 30vh;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.header{
+    grid-area: 1 / 1 / 2 / 11;
+    font-size: 1em;
+    width: 100%;
+    height: 15vh;
+}
+
+.header > nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+    justify-content: center;
+}
+
+.header-nav > div{
+    text-align: center;
+    justify-content: center;
+}
+
+.nav-section{
+    margin: 0.5em;
+    width: 12%;
+    height: 75%;
+    
+}
+
+.nav-section > img{
+    width: 50%;
+    height: 100%;
+}
+
+.join-button{
+    border-radius: 15px;
+    border: 0px;
+    width: 100%;
+    height: 75%;
+}
+
+.banner{
+    grid-area: 2 / 1 / 3 / 11;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    justify-content: space-around;
+    width: 100%;
+    height: 50vh;
+
+}
+
+.description{
+    width: 45%;
+    font-size: 1.5em;
+    height: 100%;
+}
+
+.banner-img{
+    width: 45%;
+    height: 100%;
+}
+
+.banner-img > img{
+    width: 90%;
+    height: 100%;
+}
+
+.p_bold{
+    font-weight: 600;
+    font-size: 1.7em;
+}
+
+
+.large-cards{
+    grid-area: 4 / 2 / 5 / 10; 
+    font-size: 1.5em;
+}
+
+.large-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+    margin-bottom: 12px;
+    border-radius: 12px;
+    padding: 0.5em;
+    box-shadow: 1px 3px 1px 4px rgb(204, 202, 202);
+    height: 25vh;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.large-card-text{
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 0.6em;
+    width: 50%;
+}
+
+.large-card-img > img{
+    width: 150px;
+    height: 150px;
+}
+
