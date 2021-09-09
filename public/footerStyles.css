@@ -1,0 +1,122 @@
+.floating{
+    grid-area: 7 / 2 / 8 / 10; 
+    padding-top: 3em;
+    text-align: center;
+}
+
+.floating-text{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(204, 202, 202);
+}
+
+.floating-text > button {
+    height: 35%;
+    width: 35%;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: rgb(233, 233, 233);
+}
+
+.footer{
+    background-color: royalblue;
+    z-index: -1;
+    color: white;
+    margin-top: -6em;
+    padding: 3em;
+    grid-area: 8 / 1 / 9 /12;
+
+}
+
+.company-box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.company-box > p{
+    font-size: 2em;
+}
+
+.company-box > img{
+    width: 20vw;
+    flex: 0 0 auto;
+    height: 15vh;
+}
+
+.aboutUs-grid{
+    z-index: 2;
+    display: grid;
+    
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 10vh 10vh 10vh;
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+.floating{
+    grid-area: 7 / 4 / 8 / 8; 
+    padding-top: 3em;
+    text-align: center;
+}
+
+.floating-text{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(204, 202, 202);
+}
+
+.floating-text > button {
+    height: 25%;
+    width: 25%;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: rgb(233, 233, 233);
+}
+
+.footer{
+    background-color: royalblue;
+    z-index: -1;
+    color: white;
+    margin-top: -6em;
+    padding: 3em;
+    grid-area: 8 / 1 / 9 /12;
+
+}
+
+.company-box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.company-box > p{
+    font-size: 2.5em;
+}
+
+.company-box > img{
+    width: 5vw;
+    height: 15vh;
+}
+
+.aboutUs-grid{
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 10vh 10vh 10vh;
+
+}
+}
