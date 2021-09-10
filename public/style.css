@@ -2,6 +2,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+
 .root {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -10,38 +11,53 @@
     grid-row-gap: 0px;
 }
 
+.main{
+
+}
+
 .p_bold{
     font-weight: 600;
     font-size: 1.7em;
 }
 
-
 .reverse{
-    flex-direction: row-reverse;
+    flex-direction: column;
 }
-
+.reverse  > .large-card-img > img{
+    margin-top: 0px;
+    margin-bottom: 1em;
+}
 .avatar > img{
     width: 100px;
     height: 100px;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
     *{
         font-family: 'Open Sans', sans-serif;
     }
     .root {
-
         display: grid;
         grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: 15vh 70vh 10vh 90vh 10vh 50vh 30vh 50vh;
+        grid-template-rows: 15vh 70vh 10vh auto 10vh 50vh 30vh 50vh;
         grid-column-gap: 0px;
+        z-index: -3;
         grid-row-gap: 0px;
     }
         
    
     .p_bold{
         font-weight: 600;
-        font-size: 1.7em;
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    .reverse{
+        flex-direction: row-reverse;
+    }
+    .reverse  > .large-card-img > img{
+        margin-top: 0px;
+        margin-bottom: 1em;
     }
     
 }
